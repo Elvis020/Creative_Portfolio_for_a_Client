@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Creative Portfolio 2</title>
@@ -12,12 +13,14 @@
     <section id="container">
         <header>
             <div id="logo">
-                <h2>TIM WILSON</h2>
+                <h2>TIM WILSON</h2> 
                 <h4>GRAPHIC & WEB DESIGNER</h4>
             </div>
             <div class="social-icons-container">
                 <span class="social-text">
-                    <i class="fas fa-share"></i>
+                    <button class="pulse-button">
+                        <i class="fas fa-share"></i>
+                    </button>
                 </span>
 
                 <ul class="social-icons">
@@ -28,6 +31,9 @@
                 </ul>
             </div>
         </header>
+
+
+        
         <!-- Profile Section -->
         <section id="content">
             <div id="profile">
@@ -35,7 +41,7 @@
                     <div class="photo-inner">
                         <ul>
                             <li><img src="./images/photo.jpg" alt=""></li>
-                            <li><img src="./images/photo1.png" alt=""></li>
+                            <!-- <li><img src="./images/photo1.png" alt=""></li> -->
                         </ul>
                     </div>
 
@@ -66,13 +72,34 @@
             <!-- Tabs Menu Section -->
             <nav class="menu">
                 <ul class="tabs">
-                    <li><a href="#" class="tab-profile"> <i><i class="fa fa-user"></i></i> PROFILE</a>
-                    <li><a href="#" class="tab-profile"> <i><i class="fab fa-wpexplorer"></i></i> RESUME</a>
-                    <li><a href="#" class="tab-profile"> <i><i class="fa fa-id-card"></i></i> PORTFOLIO</a>
-                    <li><a href="#" class="tab-profile"> <i><i class="fab fa-telegram"></i></i> CONTACT</a>
+                    <li class="tmenu" >
+                        <a href="#profile" class="tab-profile active"><i><i class="fa fa-user"></i></i> PROFILE</a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#resume"><i><i class="fab fa-wpexplorer"></i></i> RESUME</a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#portfolio"><i><i class="fa fa-id-card"></i></i> PORTFOLIO</a>
+                    </li>
+                    <li class="tmenu">
+                        <a href="#contact"><i><i class="fab fa-telegram"></i></i> CONTACT</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> 
+
+            <section id="resume">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugit porro eligendi explicabo quo voluptas consectetur asperiores facilis, laborum accusantium illum cumque molestiae eveniet odit dolorum dicta! Debitis distinctio eaque pariatur facilis labore temporibus minus velit consectetur, sit quae, atque, eius molestiae dicta perspiciatis asperiores tempora tenetur praesentium alias.</p>
+            </section>
+
+            <section id="portfolio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugit porro eligendi explicabo quo voluptas consectetur asperiores facilis, laborum accusantium illum cumque molestiae eveniet odit dolorum dicta! Debitis distinctio eaque pariatur facilis labore temporibus minus velit consectetur, sit quae, atque, eius molestiae dicta perspiciatis asperiores tempora tenetur praesentium alias.</p>
+            </section>
+
+            <section id="contact">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore fugit porro eligendi explicabo quo voluptas consectetur asperiores facilis, laborum accusantium illum cumque molestiae eveniet odit dolorum dicta! Debitis distinctio eaque pariatur facilis labore temporibus minus velit consectetur, sit quae, atque, eius molestiae dicta perspiciatis asperiores tempora tenetur praesentium alias.</p>
+            </section>
+
+
         </section>
 
         <footer class="copyright">
@@ -81,9 +108,12 @@
     </section>
 
 
-
+    
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
 </body>
 </html>
