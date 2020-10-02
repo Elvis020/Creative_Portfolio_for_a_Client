@@ -19,6 +19,20 @@ jQuery(document).ready(function() {
         $logo.fadeOut('slow')
     })
 
+
+    // Changing themes
+    $('#yellow-color').click(function(e){
+        $('.main-wrapper-resume').attr("id", 'yellow');
+    })
+
+    $('#red-color').click(function(e){
+        $('.main-wrapper-resume').attr("id", 'red');
+    })
+
+
+
+
+
     let $content = $('#content');
 
     $content.easytabs({

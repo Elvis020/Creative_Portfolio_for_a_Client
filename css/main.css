@@ -10,6 +10,10 @@ body {
     margin-top: 30px;
 }
 
+#content {
+     background-color: #fff;
+}
+
 #profile {
     background: #cf455c;
     background-image: url(../images/header-shadow.png);
@@ -131,7 +135,7 @@ ul.social-icons {
     line-height: 15px;
     border: none;
     box-shadow: 0 0 0 0 rgb(101, 100, 100);
-    background-color: #cf455c;
+    background-color: #cf455c;`
     cursor: pointer;
     color: #fff;
     font-size: 20px;
