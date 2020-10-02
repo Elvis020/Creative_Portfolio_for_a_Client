@@ -29,6 +29,52 @@ jQuery(document).ready(function() {
         $('.main-wrapper-resume').attr("id", 'red');
     })
 
+    $('#blue-color').click(function(e){
+        $('.main-wrapper-resume').attr("id", 'blue');
+    })
+
+    $('#green-color').click(function(e){
+        $('.main-wrapper-resume').attr("id", 'green');
+    })
+
+    $('.setting-icon').click(function(){
+        $('.color-box').toggleClass("main");
+    })
+
+
+
+    let $catsfilter = $('.cats-filter');
+    $catsfilter.find('a').click(function() {
+        let currentOption = $(this).attr('data-filter');
+        $(this).parent().parent().find('a').removeClass('current');
+        $(this).addClass('current');
+    })
+
+    let $plist = $('#portfolio-list');
+    let $pfilter = $('#portfolio-filter');
+
+    $plist.isotope({
+        filter : '*',
+        layoutMode : 'masonry',
+        animationOptions : {
+            duration : 750,
+            easing : 'linear'
+        }
+    });
+
+    $pfilter.find('a').click(function() {
+        let selector = $(this).attr('data-filter');
+        $plist.isotope({
+            filter : selector,
+            animationOptions : {
+            duration : 750,
+            easing : 'linear',
+            queue : false,
+            }
+        });
+        return false;
+    });
+
 
 
 
