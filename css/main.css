@@ -364,13 +364,19 @@ form .input, form textarea{
     background: #fdfdfd;
     border: 1px solid #ced4da;
     border-radius: 2px;
-    color: #777;
+    color: #999;
     font-size: 12px;
     height: 30px;
     outline: none;
     padding: 7px 10px;
     resize: none;
     width: 97%;
+}
+
+.form-control-placeholder{
+    color: #999!important;
+    font-weight: 400!important;
+    padding: 0px !important;
 }
 
 form textarea{
